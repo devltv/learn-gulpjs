@@ -1,0 +1,18 @@
+extends _templates/_layout/_layout.pug
+
+block var
+    - let title = "Homepage";
+
+block main 
+    include ./_template/pages/index.pug
+
+block loading 
+
+
+block links
+    link(rel="stylesheet" type="text/css" href="./css/core.min.css")
+    link(rel="stylesheet" type="text/css" href="./css/main.min.css")
+
+block scripts
+    script(type="text/javascript", src="./js/core.min.js")
+    script(type="text/javascript", src="./js/main.min.js")
